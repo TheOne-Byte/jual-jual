@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ItemListController;
+use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +20,5 @@ Route::get('/', function () {
 });
 
 Route::get('/list', [ItemListController::class, 'index']);
+
+Route::get('/login', [LoginController::class, 'index']);
