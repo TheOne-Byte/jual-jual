@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\ItemListController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\UserProfileController;
@@ -25,3 +26,5 @@ Route::get('/list', [ItemListController::class, 'index']);
 Route::get('/login', [LoginController::class, 'index']);
 
 Route::get('/UserProfile', [UserProfileController::class, 'index']);
+
+Route::get('/HomePage', [HomepageController::class, 'index']);
